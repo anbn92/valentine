@@ -1,0 +1,63 @@
+body {
+  font-family: "Arial", sans-serif;
+}
+
+button:hover {
+  background-color: #c2185b !important;
+}
+
+@keyframes falling-hearts {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+.heart {
+  position: fixed;
+  top: -10px;
+  font-size: 24px;
+  color: red;
+  animation: falling-hearts linear infinite;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: bold;
+  color: red;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+#heart-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}
+
+.show-slideshow {
+  display: block !important;
+}
+
+.slideshow-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
