@@ -44,13 +44,13 @@ button:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px; /* Default width for desktop */
-  height: 500px; /* Default height for desktop */
+  width: 400px;
+  height: 500px;
   border-radius: 10px;
   display: none;
   z-index: 10;
-  max-width: 90vw; /* Adjust width for mobile */
-  max-height: 70vh; /* Prevent it from being too tall */
+  max-width: 90vw;
+  max-height: 70vh;
   overflow: hidden;
 }
 
@@ -58,16 +58,14 @@ button:hover {
   display: block !important;
 }
 
-/* Make images inside the slideshow responsive */
 .slideshow-image {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 100%; /* Ensures the image fits inside the container */
-  object-fit: contain; /* Keeps aspect ratio */
+  max-height: 100%;
+  object-fit: contain;
 }
 
-/* Adjust container size for small screens */
 @media (max-width: 768px) {
   #heart-container {
     width: 90vw;
